@@ -1,0 +1,7 @@
+{
+  "name": "SecondHandPlatform",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
