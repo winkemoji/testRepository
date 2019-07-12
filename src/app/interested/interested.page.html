@@ -2,13 +2,15 @@
   <ion-toolbar>
       <ion-title mode="md">
           <ion-item>
-              <ion-chip outline='false' [routerLink]="['/tabs']" > 
-                  <ion-label id='recommend'  >推荐</ion-label>
+            <a id='recommend' [routerLink]="['/tabs/home']" [ngClass]="{'nav-focus': navFlag,'nav':!navFlag}">推荐</a>
+            <a id='interested' [routerLink]="['/tabs/interested']" [ngClass]="{'nav-focus': !navFlag,'nav':navFlag}">关注</a>
+              <!-- <ion-chip slot="start" [routerLink]="['/tabs/home']" > 
+                  <ion-label id='recommend' >推荐</ion-label>
                 </ion-chip>
   
-                <ion-chip outline='false' [routerLink]="['/tabs/interested']"> 
+                <ion-chip slot="start" [routerLink]="['/tabs/interested']"> 
                     <ion-label  id='interested' >关注</ion-label>
-                  </ion-chip>
+                  </ion-chip> -->
                 
   
   
@@ -17,7 +19,7 @@
   
             <ion-chip color="primary" mode="md" outline="true" slot="end" [routerLink]="['/search']" > 
               <ion-icon class="iconSize" name="search"></ion-icon>
-              <ion-label>{{searchWord}}</ion-label>
+              <ion-label></ion-label>
             </ion-chip>
             <!-- <ion-icon class="iconSize"  name="search"></ion-icon> -->
             <!-- <ion-icon class="iconSize"  name="more"></ion-icon> -->
@@ -28,5 +30,7 @@
 </ion-header>
 
 <ion-content>
-
+    <ion-item>
+        <ion-label>关注</ion-label>
+      </ion-item>
 </ion-content>

@@ -1,13 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="tabs"></ion-back-button>
+    <ion-buttons slot="end">
+      <ion-back-button defaultHref="/tabs/home"></ion-back-button>
     </ion-buttons>
-        <ion-input></ion-input>
-   
+    <div >
+    <ion-item class='searchBar'>
+      <!-- <ion-icon name="search"></ion-icon> -->
+      <ion-input #searchInput type="text" placeholder="">
+
+        
+      </ion-input>
+    </ion-item>
+  </div>
+    
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <input  type="range" min="0" max="100" value="50" [(ngModel)]="inputValue"/>
+  {{inputValue}}
 
+  <canvas #canvas_rank1 class="canvas"></canvas>
 </ion-content>

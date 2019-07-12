@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InterestedPage implements OnInit {
 
+
+
+  public recommend: any;
+  public interested: any;
+
+  public navFlag = false;
+
   constructor() { }
+
+
+  ngAfterViewInit(): void {
+  }
 
   ngOnInit() {
   }

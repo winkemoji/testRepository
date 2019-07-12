@@ -18,3 +18,28 @@ ion-label:focus{
 .header-md:after{
     background-image: none;
 }
+
+.nav{
+    text-decoration: none;
+    font-size:18px;
+    // font-weight: 600;
+    font-weight:350;
+    display: block;
+    margin:0 15px;
+    color:black;
+}
+.nav-focus{
+    text-decoration: none;
+    font-size:27px;
+    font-weight:450;
+    display: block;
+    margin:0 15px;
+    color:black;
+    border-bottom: 2px solid#FFB5D0;
+}
+.iconSize{
+    font-size: 35px;
+}
+span{
+    font-size:17px;
+}

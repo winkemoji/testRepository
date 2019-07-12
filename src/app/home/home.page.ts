@@ -14,17 +14,12 @@ export class HomePage {
   public recommend: any;
   public interested: any;
 
-
+  public navFlag = true;
 
   constructor() { }
 
-  searchWord = '';
 
   ngAfterViewInit(): void {
-    this.interested = document.getElementById('interested');
-    console.log(this.interested.style);
-    // let interested = this.interested.nativeElement;
-    // console.log(interested);
   }
 
   recommendClick() {

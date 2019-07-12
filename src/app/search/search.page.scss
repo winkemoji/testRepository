@@ -1,0 +1,33 @@
+
+$search-radius:20px;
+
+ion-item{
+    --border-width:0 0 0 0;
+    --inner-border-width:0 0 0 0;
+    --border-radius:10px;
+    --highlight-color-focused:none;
+    
+    ion-icon{
+        --ion-text-color-rgb:255,181,208;
+        font-size: 30px;
+        border:1px solid #FFB5D0;
+        border-radius: $search-radius;
+        // border-right:none;
+        // border-top-left-radius: $search-radius;
+        // border-bottom-left-radius: $search-radius;
+    }
+    ion-input{
+        --padding-top:5px;
+        text-align: center;
+        --padding-bottom:5px;
+        border: 1px solid #FFB5D0;
+        border-radius: $search-radius;
+        // border-left: none;
+        // border-top-right-radius: $search-radius;
+        // border-bottom-right-radius: $search-radius;
+        --border-width: 0 0 0 0;
+    }
+}
+// .iconStyle{
+//     --ion-text-color-rgb:204,0,255;
+// }
